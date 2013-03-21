@@ -1,0 +1,381 @@
+// ICON HELPERS
+// -------------------------------------------------------------------------
+
+$icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
+
+@function icon-path($path) {
+  @return "#{$icon-image-path}/#{$path}";
+}
+
+@function icon-url($path) {
+  @return url(icon-path($path));
+}
+
+// ICON HELPERS
+// -------------------------------------------------------------------------
+
+.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.icon-inline-left {
+  margin-right: 5px;
+}
+
+.icon-inline-right {
+  margin-left: 5px;
+}
+
+// -------------------------------------------------------------------------
+
+.icon-circle-tick {
+  @extend .icon;
+  background: icon-url('icon-tick-circle-blue.png') no-repeat right center; 
+  height: 16px;
+  width: 16px;
+}
+
+.icon-circle-cross-red {
+  @extend .icon;
+  background: icon-url('icon-cross-circle-red.png') no-repeat right center; 
+  height: 16px;
+  width: 16px;
+  .svg & {
+    background-image: icon-url('icon-cross-circle-red.svg');
+    background-size: 100%;
+  }
+}
+
+.icon-circle-tick-green {
+  @extend .icon;
+  background: icon-url('icon-tick-circle-green.png') no-repeat right center; 
+  height: 16px;
+  width: 16px;
+}
+
+.icon-circle-tick-disabled {
+  @extend .icon-circle-tick;
+  background-image: icon-url('icon-grey-cross.png');
+  background-color: transparent;
+}
+
+.icon-tick-circle-grey {
+  @extend .icon-circle-tick;
+  background-image: icon-url('icon-tick-circle-grey.png');
+  background-color: transparent;
+}
+
+.icon-circle-tick-active {
+  @extend .icon-circle-tick;
+  background-image: icon-url('icon-tick-circle-white.png');
+  background-color: transparent;
+}
+
+.icon-circle-tick-disabled-active {
+  @extend .icon-circle-tick;
+  background-image: icon-url('icon-grey-cross-white.png');
+  background-color: transparent;
+}
+
+.icon-health-bag {
+  @extend .icon;
+  background: icon-url('icon-health-bag.png') no-repeat;  
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: -2px;
+  margin-right: $spacing-small;
+}
+
+.icon-pregnancy-large {
+  @extend .icon;
+  background: icon-url('icon-pregnancy-large.png') no-repeat; 
+  height: 42px;
+  width: 42px;
+}
+
+.icon-clock-large {
+  @extend .icon;
+  background: icon-url('icon-clock-large.png') no-repeat; 
+  height: 60px;
+  width: 60px;
+  position: relative;
+}
+
+.icon-circle-tick-white {
+  @extend .icon;
+  background: icon-url('icon-tick-white-circle.png') no-repeat right center;  
+  height: 24px;
+  width: 24px;
+}
+
+.icon-circle-tick-blue {
+  @extend .icon;
+  background: icon-url('icon-tick-white-circle-blue.png') no-repeat right center; 
+  height: 24px;
+  width: 24px;
+  &.is-excluded {
+    @extend .icon-circle-cross-red;
+  }
+}
+
+.icon-circle-cross-red {
+  @extend .icon;
+  background: icon-url('icon-cross-red-circle.png') no-repeat right center; 
+  height: 24px;
+  width: 24px;
+}
+
+.icon-calendar {
+  @extend .icon;
+  background: icon-url('icon-calendar-24x24.png') no-repeat right center; 
+  height: 24px;
+  width: 24px;
+  &.icon--white {
+    background-image: icon-url('icon-calendar-white-24x24.png');
+  }
+}
+
+.icon-money-back {
+  @extend .icon;
+  background: icon-url('icon-money-back.png') no-repeat right center; 
+  height: 108px;
+  width: 108px;
+}
+
+.icon-lock-grey {
+  @extend .icon;
+  background: icon-url('icon-lock-grey-32.png') no-repeat center center;  
+  height: 48px;
+  width: 35px;
+}
+
+.icon-phone-grey {
+  @extend .icon;
+  background: icon-url('icon-phone-grey-24.png') no-repeat center center; 
+  height: 24px;
+  width: 24px;  
+}
+
+.icon-orange-plus {
+  @extend .icon;
+  background: icon-url('icon-btn-orange-plus.png') no-repeat center center; 
+  height: 16px;
+  width: 16px;  
+}
+
+.icon-circle-info {
+  @extend .icon;
+  @include transition(opacity 0.3s ease-in-out());
+  @include retina-background-image(icon-path('icon-circle-info'), 'png', 16px, 16px);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+  margin-top: -3px;
+  &.icon--light {
+    opacity:0.6;
+  }
+}
+
+.icon-grey-minus {
+  @extend .icon;
+  background: icon-url('icon-btn-grey-minus.png') no-repeat center center;  
+  height: 16px;
+  width: 16px;  
+}
+
+.icon-white-minus {
+  @extend .icon;
+  background: icon-url('icon-btn-white-minus.png') no-repeat center center;
+  height: 16px;
+  width: 16px;  
+}
+
+.icon-white-plus {
+  @extend .icon;
+  background: icon-url('icon-btn-white-plus.png') no-repeat center center;
+  height: 16px;
+  width: 16px;  
+}
+
+.icon-star-yellow {
+  @extend .icon;
+  background: icon-url('icon-star-yellow-16.png') no-repeat center center;
+  height: 24px;
+  width: 24px;  
+}
+
+// Household/scale icons used in the quote selector. These icons
+// change to an active state when a checked input preceeds them
+// as well as being able to use an active class.
+.icon-household {
+  background: icon-url('sprite-household.png') 0 0 no-repeat;
+  width: 37px;
+  height: 37px;
+  display: inline-block;
+
+  $types: singles, families, couples, parent;
+
+  // Loop through each type and create the modifier class needed
+  // to use each item in the sprite. Also creates active states 
+  // based on the sprite
+  @for $i from 1 through length($types)  {
+    $type: nth($types, $i);
+    $y: ($i - 1) * -38px;
+    &.icon-household--#{$type} {
+      background-position: 0 $y;
+      &.is-active,
+    .is-selected > & {
+        background-position: -38px $y;
+      }
+    }
+  }
+}
+
+.icon-household-small {
+  background: icon-url('sprite-household-small.png') 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+
+  $types: singles, families, couples, parent;
+
+  // Loop through each type and create the modifier class needed
+  // to use each item in the sprite. Also creates active states 
+  // based on the sprite
+  @for $i from 1 through length($types)  {
+    $type: nth($types, $i);
+    $y: ($i - 1) * -16px;
+    &.icon-household--#{$type} {
+      background-position: 0 $y;
+      &.is-active,
+    .is-selected & {
+        background-position: -16px $y;
+      }
+    }
+  }
+}
+
+.icon-circle-arrow {
+  background: icon-url('sprite-circle-arrow.png') 0 0 no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+
+  $types: grey, green, light, white;
+
+  // Loop through each type and create the modifier class needed
+  // to use each item in the sprite. Also creates active states 
+  // based on the sprite
+  @for $i from 1 through length($types)  {
+    $type: nth($types, $i);
+    $y: ($i - 1) * -16px;
+    &.icon--#{$type} {
+      &.icon--left {
+        background-position: 0 $y;
+      }
+      &.icon--right {
+        background-position: -16px $y;
+      }
+    }
+  }
+}
+
+.icon-advantage {
+  background: icon-url('sprite-advantages.png') 0 0 no-repeat;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+
+  $types: tick, app, calendar, claim;
+
+  // Loop through each type and create the modifier class needed
+  // to use each item in the sprite. Also creates active states 
+  // based on the sprite
+  @for $i from 1 through length($types)  {
+    $type: nth($types, $i);
+    $x: ($i - 1) * -35px;
+    &.icon--#{$type} {
+      background-position: $x 0;
+    }
+  }
+}
+
+.icon-circle-chevron-small-up,
+.icon-circle-chevron-small-down {
+  @extend .icon;
+  background: icon-url('sprite-circle-chevron-small.png') no-repeat  top left; 
+  height: 12px;
+  width: 12px;
+}
+
+.icon-circle-chevron-small-down {
+  background-position: bottom left;
+}
+
+.icon-close-large {
+  @extend .icon;
+  @include retina-background-image(icon-path('icon-close-large'), 'png', 32px, 64px);
+  background-repeat: no-repeat;
+
+  background-position: 0 0;
+  height: 32px;
+  width: 32px;
+
+  &:hover {
+    background-position: 0 -32px;
+  }
+}
+
+.icon-switching-to-nib,
+.icon-switch {
+  background-image: icon-url('switch.png');
+  background-position: bottom center; 
+  background-repeat: no-repeat;
+  display: block;
+  height: 77px;
+  width: 96px;
+  .svg & {
+    background-image: icon-url('switch.svg');
+    background-size: 100%;
+  }
+}
+
+%icon-circle-arrow-right {
+  display: inline-block;
+  height: 16px;
+  width: 16px;
+  position: relative;
+  top: 4px;
+  left: 3px;
+  a:hover & {
+    background-position: bottom;
+  }
+}
+
+.icon-circle-grey-arrow-right {
+  @extend %icon-circle-arrow-right;
+  @include retina-background-image(icon-path('icon-circle-grey-arrow-right'), 'png', 16px, 32px);
+}
+
+.icon-circle-green-arrow-right {
+  @extend %icon-circle-arrow-right;
+  @include retina-background-image(icon-path('icon-circle-green-arrow-right'), 'png', 16px, 32px);
+}
+
+.icon-circle-white-arrow-right {
+  @extend %icon-circle-arrow-right;
+  @include retina-background-image(icon-path('icon-circle-white-arrow-right'), 'png', 16px);
+}
+
+.icon-alert-white-20 {
+  @extend .icon;
+  @include svg-icon-background-image('alert-white');
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin-top: -1px;
+}
