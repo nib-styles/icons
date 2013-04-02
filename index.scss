@@ -179,6 +179,21 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   }
 }
 
+.icon-circle-info-button {
+  @extend .icon;
+  @include transition(opacity 0.3s ease-in-out());
+  @include retina-background-image(icon-path('icon-circle-info-btn'),'png');
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 18px;
+  width: 18px;
+  margin-top: -3px;
+
+  &:hover {
+    background-position: 0 -18px;
+  }
+}
+
 .icon-grey-minus {
   @extend .icon;
   background: icon-url('icon-btn-grey-minus.png') no-repeat center center;  
