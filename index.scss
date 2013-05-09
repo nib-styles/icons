@@ -398,7 +398,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 .icon-arrow-right {
   @extend .icon;
   @include move-up(1px);
-  @include retina-background-image('../local/compare-extras/icon-circle-arrow-grey-right', 'png', 16px, 16px);
+  @include retina-background-image(icon-path('icon-circle-arrow-grey-right'), 'png', 16px, 16px);
   background-repeat: no-repeat;
   background-position: center;
   height: 16px;
@@ -408,7 +408,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 .icon-arrow-right.icon--grey {
   @extend .icon;
   @include move-up(1px);
-  @include retina-background-image('../local/compare-extras/icon-circle-arrow-grey-right', 'png', 16px, 16px);
+  @include retina-background-image(icon-path('icon-circle-arrow-grey-right'), 'png', 16px, 16px);
   background-repeat: no-repeat;
   background-position: center;
   height: 16px;
@@ -418,7 +418,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 .icon-arrow-left.icon--grey {
   @extend .icon;
   @include move-up(1px);
-  @include retina-background-image('../local/compare-extras/icon-circle-arrow-grey-left', 'png', 16px, 16px);
+  @include retina-background-image(icon-path('icon-circle-arrow-grey-left'), 'png', 16px, 16px);
   background-repeat: no-repeat;
   background-position: center;
   height: 16px;
