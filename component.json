@@ -1,7 +1,7 @@
 {
   "name": "icons",
   "main": "index.scss",
-  "version": "0.1.2",
+  "version": "0.1.6",
   "dependencies": {},
   "styles": [
     "index.scss"
@@ -37,10 +37,14 @@
     "icons/icon-close-large@2x.png",
     "icons/icon-cross-circle-red.png",
     "icons/icon-cross-red-circle.png",
+    "icons/icon-darkgrey-plus.png",
+    "icons/icon-darkgrey-plus@2x.png",
     "icons/icon-equal-light-grey-30.png",
     "icons/icon-grey-cross-mask.png",
     "icons/icon-grey-cross-white.png",
     "icons/icon-grey-cross.png",
+    "icons/icon-grey-plus.png",
+    "icons/icon-grey-plus@2x.png",
     "icons/icon-lock-grey-32.png",
     "icons/icon-lock-grey-48x48.png",
     "icons/icon-money-back.png",
