@@ -424,3 +424,10 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   height: 16px;
   width: 16px;
 }
+
+.icon-grey-plus {
+  @extend .icon;
+  @include retina-background-image(icon-path('icon-grey-plus'), 'png', 15px, 15px);
+  height: 15px;
+  width: 15px;
+}
