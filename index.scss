@@ -20,8 +20,8 @@
 }
 
 @mixin svg-icon-background-image($image) {
-  background: icon-url("#{$image}.png");
-  background: none, icon-url("#{$image}.svg");
+  background: url("icons/#{$image}.png");
+  background: none, url("icons/#{$image}.svg");
 }
 
 
