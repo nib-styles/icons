@@ -31,14 +31,14 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-circle-tick {
   @extend .icon;
-  background: icon-url('icon-tick-circle-blue.png') no-repeat right center; 
+  background: icon-url('icon-tick-circle-blue.png') no-repeat right center;
   height: 16px;
   width: 16px;
 }
 
 .icon-circle-cross-red {
   @extend .icon;
-  background: icon-url('icon-cross-circle-red.png') no-repeat right center; 
+  background: icon-url('icon-cross-circle-red.png') no-repeat right center;
   height: 16px;
   width: 16px;
   .svg & {
@@ -49,7 +49,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-circle-tick-green {
   @extend .icon;
-  background: icon-url('icon-tick-circle-green.png') no-repeat right center; 
+  background: icon-url('icon-tick-circle-green.png') no-repeat right center;
   height: 16px;
   width: 16px;
 }
@@ -80,7 +80,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-health-bag {
   @extend .icon;
-  background: icon-url('icon-health-bag.png') no-repeat;  
+  background: icon-url('icon-health-bag.png') no-repeat;
   height: 16px;
   width: 16px;
   position: relative;
@@ -90,14 +90,14 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-pregnancy-large {
   @extend .icon;
-  background: icon-url('icon-pregnancy-large.png') no-repeat; 
+  background: icon-url('icon-pregnancy-large.png') no-repeat;
   height: 42px;
   width: 42px;
 }
 
 .icon-clock-large {
   @extend .icon;
-  background: icon-url('icon-clock-large.png') no-repeat; 
+  background: icon-url('icon-clock-large.png') no-repeat;
   height: 60px;
   width: 60px;
   position: relative;
@@ -105,14 +105,14 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-circle-tick-white {
   @extend .icon;
-  background: icon-url('icon-tick-white-circle.png') no-repeat right center;  
+  background: icon-url('icon-tick-white-circle.png') no-repeat right center;
   height: 24px;
   width: 24px;
 }
 
 .icon-circle-tick-blue {
   @extend .icon;
-  background: icon-url('icon-tick-white-circle-blue.png') no-repeat right center; 
+  background: icon-url('icon-tick-white-circle-blue.png') no-repeat right center;
   height: 24px;
   width: 24px;
   &.is-excluded {
@@ -122,14 +122,14 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-circle-cross-red {
   @extend .icon;
-  background: icon-url('icon-cross-red-circle.png') no-repeat right center; 
+  background: icon-url('icon-cross-red-circle.png') no-repeat right center;
   height: 24px;
   width: 24px;
 }
 
 .icon-calendar {
   @extend .icon;
-  background: icon-url('icon-calendar-24x24.png') no-repeat right center; 
+  background: icon-url('icon-calendar-24x24.png') no-repeat right center;
   height: 24px;
   width: 24px;
   &.icon--white {
@@ -139,30 +139,30 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-money-back {
   @extend .icon;
-  background: icon-url('icon-money-back.png') no-repeat right center; 
+  background: icon-url('icon-money-back.png') no-repeat right center;
   height: 108px;
   width: 108px;
 }
 
 .icon-lock-grey {
   @extend .icon;
-  background: icon-url('icon-lock-grey-32.png') no-repeat center center;  
+  background: icon-url('icon-lock-grey-32.png') no-repeat center center;
   height: 48px;
   width: 35px;
 }
 
 .icon-phone-grey {
   @extend .icon;
-  background: icon-url('icon-phone-grey-24.png') no-repeat center center; 
+  background: icon-url('icon-phone-grey-24.png') no-repeat center center;
   height: 24px;
-  width: 24px;  
+  width: 24px;
 }
 
 .icon-orange-plus {
   @extend .icon;
-  background: icon-url('icon-btn-orange-plus.png') no-repeat center center; 
+  background: icon-url('icon-btn-orange-plus.png') no-repeat center center;
   height: 16px;
-  width: 16px;  
+  width: 16px;
 }
 
 .icon-circle-info {
@@ -196,30 +196,30 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 
 .icon-grey-minus {
   @extend .icon;
-  background: icon-url('icon-btn-grey-minus.png') no-repeat center center;  
+  background: icon-url('icon-btn-grey-minus.png') no-repeat center center;
   height: 16px;
-  width: 16px;  
+  width: 16px;
 }
 
 .icon-white-minus {
   @extend .icon;
   background: icon-url('icon-btn-white-minus.png') no-repeat center center;
   height: 16px;
-  width: 16px;  
+  width: 16px;
 }
 
 .icon-white-plus {
   @extend .icon;
   background: icon-url('icon-btn-white-plus.png') no-repeat center center;
   height: 16px;
-  width: 16px;  
+  width: 16px;
 }
 
 .icon-star-yellow {
   @extend .icon;
   background: icon-url('icon-star-yellow-16.png') no-repeat center center;
   height: 24px;
-  width: 24px;  
+  width: 24px;
 }
 
 // Household/scale icons used in the quote selector. These icons
@@ -234,7 +234,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   $types: singles, families, couples, parent;
 
   // Loop through each type and create the modifier class needed
-  // to use each item in the sprite. Also creates active states 
+  // to use each item in the sprite. Also creates active states
   // based on the sprite
   @for $i from 1 through length($types)  {
     $type: nth($types, $i);
@@ -258,7 +258,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   $types: singles, families, couples, parent;
 
   // Loop through each type and create the modifier class needed
-  // to use each item in the sprite. Also creates active states 
+  // to use each item in the sprite. Also creates active states
   // based on the sprite
   @for $i from 1 through length($types)  {
     $type: nth($types, $i);
@@ -282,7 +282,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   $types: grey, green, light, white;
 
   // Loop through each type and create the modifier class needed
-  // to use each item in the sprite. Also creates active states 
+  // to use each item in the sprite. Also creates active states
   // based on the sprite
   @for $i from 1 through length($types)  {
     $type: nth($types, $i);
@@ -307,7 +307,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   $types: tick, app, calendar, claim;
 
   // Loop through each type and create the modifier class needed
-  // to use each item in the sprite. Also creates active states 
+  // to use each item in the sprite. Also creates active states
   // based on the sprite
   @for $i from 1 through length($types)  {
     $type: nth($types, $i);
@@ -321,7 +321,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 .icon-circle-chevron-small-up,
 .icon-circle-chevron-small-down {
   @extend .icon;
-  background: icon-url('sprite-circle-chevron-small.png') no-repeat  top left; 
+  background: icon-url('sprite-circle-chevron-small.png') no-repeat  top left;
   height: 12px;
   width: 12px;
 }
@@ -347,7 +347,7 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
 .icon-switching-to-nib,
 .icon-switch {
   background-image: icon-url('switch.png');
-  background-position: bottom center; 
+  background-position: bottom center;
   background-repeat: no-repeat;
   display: block;
   height: 77px;
@@ -394,6 +394,44 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   background-size: 100%;
   margin-top: -1px;
 }
+
+.icon-arrow-right {
+  @extend .icon;
+  @include move-up(1px);
+  @include retina-background-image(icon-path('icon-circle-arrow-grey-right'), 'png', 16px, 16px);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-arrow-right.icon--grey {
+  @extend .icon;
+  @include move-up(1px);
+  @include retina-background-image(icon-path('icon-circle-arrow-grey-right'), 'png', 16px, 16px);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-arrow-left.icon--grey {
+  @extend .icon;
+  @include move-up(1px);
+  @include retina-background-image(icon-path('icon-circle-arrow-grey-left'), 'png', 16px, 16px);
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-grey-plus {
+  @extend .icon;
+  @include retina-background-image(icon-path('icon-grey-plus'), 'png', 15px, 15px);
+  height: 15px;
+  width: 15px;
+}
+
 
 .icon-edit-pencil-13 {
   @extend .icon;
