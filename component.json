@@ -67,6 +67,20 @@
     "icons/sprite-household-small@2x.png",
     "icons/sprite-household.png",
     "icons/switch.png",
-    "icons/switch.svg"
+    "icons/switch.svg",
+    "icons/icon-close-large-white.png",
+    "icons/icon-close-large-white@2x.png",
+    "icons/icon-edit-pencil-12.png",
+    "icons/icon-edit-pencil-12.svg",
+    "icons/icon-edit-pencil-13.png",
+    "icons/icon-edit-pencil-13.svg",
+    "icons/icon-edit-pencil-13@2x.png",
+    "icons/icon-edit-pencil-16.png",
+    "icons/icon-edit-pencil-16.svg",
+    "icons/icon-info-opacity-16.png",
+    "icons/icon-info-opacity-16.svg",
+    "icons/icon-info-opacity-16@2x.png",
+    "icons/icon-info-white-16.png",
+    "icons/icon-info-white-16.svg"
   ]
 }
