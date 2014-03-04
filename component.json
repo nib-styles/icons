@@ -1,6 +1,6 @@
 {
   "name": "icons",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "styles": ["index.css"],
   "images": [
     "icons/alert-white.png",
@@ -31,6 +31,8 @@
     "icons/icon-clock-large.png",
     "icons/icon-close-large.png",
     "icons/icon-close-large@2x.png",
+    "icons/icon-close-small.png",
+    "icons/icon-close-small@2x.png",
     "icons/icon-cross-circle-red.png",
     "icons/icon-cross-red-circle.png",
     "icons/icon-darkgrey-plus.png",
