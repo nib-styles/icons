@@ -301,6 +301,22 @@
   .icon-close-large:hover {
     background-position: 0 -32px; }
 
+.icon-close-small {
+  display: inline-block;
+  vertical-align: middle;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  height: 16px;
+  width: 16px; }
+  .no-retina .icon-close-small, .no-js .icon-close-small {
+    background-image: url("icons/icon-close-small.png"); }
+  .retina .icon-close-small {
+    background-image: url("icons/icon-close-small@2x.png");
+    background-size: 100%;
+    background-size: 16px 32px; }
+  .icon-close-small:hover {
+    background-position: 0 -16px; }
+
 .icon-switching-to-nib,
 .icon-switch {
   background-image: url("icons/switch.png");
