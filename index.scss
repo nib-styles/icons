@@ -431,3 +431,11 @@ $icon-image-path: "#{$component-path}/nib-styles-icons/icons" !default;
   height: 15px;
   width: 15px;
 }
+
+.icon-white-tick-24 {
+  @extend .icon;
+  @include retina-background-image(icon-path('icon-white-tick-24'), 'png', 48px, 41px);
+  height: 24px;
+  width: 21px;
+}
+
