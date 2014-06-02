@@ -493,7 +493,7 @@
 .icon-pdf {
   display: inline-block;
   vertical-align: middle;
-  @include retina-background-image('icons/icon-pdf-16', 'png', 16px, 16px);
+  background: url('icons/icon-pdf-16.png') no-repeat center center;
   height: 16px;
   width: 16px;
 }

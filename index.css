@@ -430,3 +430,10 @@
     background-image: url("icons/icon-grey-plus@2x.png");
     background-size: 100%;
     background-size: 15px 15px; }
+
+.icon-pdf {
+  display: inline-block;
+  vertical-align: middle;
+  background: url("icons/icon-pdf-16.png") no-repeat center center;
+  height: 16px;
+  width: 16px; }
