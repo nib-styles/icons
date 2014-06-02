@@ -489,3 +489,11 @@
   height: 15px;
   width: 15px;
 }
+
+.icon-pdf {
+  display: inline-block;
+  vertical-align: middle;
+  @include retina-background-image('icons/icon-pdf-16', 'png', 16px, 16px);
+  height: 16px;
+  width: 16px;
+}
