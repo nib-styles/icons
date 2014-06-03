@@ -1,6 +1,6 @@
 {
   "name": "icons",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "styles": ["index.css", "index.scss"],
   "images": [
     "icons/alert-white.png",
