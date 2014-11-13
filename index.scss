@@ -498,3 +498,33 @@
   width: 16px;
   margin-right: 5px;
 }
+
+.icon-phone-grey-16 {
+  @extend .icon;
+  background: url('icons/icon-phone-grey-16.png') no-repeat center center;
+  height: 16px;
+  width: 16px;
+
+}
+
+.icon-email-grey-16 {
+  @extend .icon;
+  background: url('icons/icon-email-grey-16.png') no-repeat center center;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-link-grey-16 {
+  @extend .icon;
+  background: url('icons/icon-link-grey-16.png') no-repeat center center;
+  height: 16px;
+  width: 16px;
+}
+
+.icon-marker-grey-16 {
+  @extend .icon;
+  background: url('icons/icon-marker-grey-16.png') no-repeat center center;
+  height: 24px;
+  width: 16px;
+}
+
