@@ -71,7 +71,7 @@
     "icons/icon-email-grey-16.png",
     "icons/icon-link-grey-16.png",
     "icons/icon-marker-grey-16.png"
-  ]
+  ],
   "repository": {
     "type": "git",
     "url": "git@github.com:nib-styles/icons.git"
