@@ -1,9 +1,10 @@
 {
   "name": "@nib-styles/icons",
-  "version": "0.2.7",
+  "version": "0.2.8",
   "main.css": "index.css",
   "files": [
-      "icons/alert-white.png",
+    "index.css",
+    "icons/alert-white.png",
     "icons/alert-white.svg",
     "icons/btn-close.png",
     "icons/icon-btn-grey-minus.png",
