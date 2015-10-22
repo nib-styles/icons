@@ -21,9 +21,6 @@
   background: url('icons/icon-cross-circle-red.png') no-repeat right center;
   height: 16px;
   width: 16px; }
-  .svg .icon-circle-cross-red, .svg .icon-circle-tick-blue.is-excluded {
-    background-image: url('icons/icon-cross-circle-red.svg');
-    background-size: 100%; }
 
 .icon-circle-tick-green {
   display: inline-block;
