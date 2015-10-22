@@ -342,8 +342,8 @@
 .icon-alert-white-20 {
   display: inline-block;
   vertical-align: middle;
-  background: url("icons/icons/alert-white.png");
-  background: none, url("icons/icons/alert-white.svg");
+  background: url("icons/alert-white.png");
+  background: none, url("icons/alert-white.svg");
   height: 20px;
   width: 20px;
   background-repeat: no-repeat;
